@@ -1,0 +1,1 @@
+Local checkout paths in pytest-optimized-smoke.txt are redacted to <checkout>; no other change.

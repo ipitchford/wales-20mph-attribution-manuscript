@@ -1,0 +1,7 @@
+# git identity of the replayed clone (2026-10-12)
+7ea482fa82fd2330db6383c249aba0d43ac4bea4
+v1.0.0
+7ea482fa82fd2330db6383c249aba0d43ac4bea4	refs/heads/main
+48e393328e93f56a55fe0cd03015b864559c9dfc	refs/tags/v1.0.0
+7ea482fa82fd2330db6383c249aba0d43ac4bea4	refs/tags/v1.0.0^{}
+dirty files: 0

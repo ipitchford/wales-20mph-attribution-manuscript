@@ -1,0 +1,36 @@
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Linux Libertine O}
+\setmathfont{Libertinus Math}
+\setmonofont{Menlo}[Scale=0.78]
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\itshape Wales 20 mph casualty attribution audit}
+\fancyhead[R]{\footnotesize\itshape Companion manuscript \textperiodcentered{} unrefereed candidate}
+\fancyfoot[C]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\footnotesize\thepage}\renewcommand{\headrulewidth}{0pt}}
+\newcommand{\statusbox}[1]{\par\medskip\noindent\fcolorbox{black!40}{black!4}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\small #1}}\par\medskip}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,format=hang}
+\captionsetup[table]{position=above}
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\small}
+\makeatletter
+\def\verbatim@font{\small\ttfamily}
+\makeatother
+\setlength{\emergencystretch}{3em}
+
+\AtBeginDocument{\urlstyle{same}\hypersetup{pdfauthor={Anonymous},pdftitle={Wales 20 mph Casualty Attribution Audit: A Constructive Non-Identification Result},pdfsubject={Evidence Press companion manuscript, unrefereed candidate, DOI 10.5281/zenodo.23326288},pdfkeywords={Wales; 20 mph; road safety; causal inference; identification; non-identification}}}
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\AtBeginDocument{\def\UrlBreaks{\do\.\do\-\do\/\do\_\do0\do1\do2\do3\do4\do5\do6\do7\do8\do9}\def\UrlBigBreaks{}}
+\AtBeginDocument{\Urlmuskip=0mu plus 0mu}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.85}

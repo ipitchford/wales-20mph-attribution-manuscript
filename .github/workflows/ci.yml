@@ -1,0 +1,37 @@
+name: ci
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Manifest covers every tracked file and matches
+        run: |
+          sha256sum -c MANIFEST.sha256 --quiet
+          git ls-files | grep -v -x -e MANIFEST.sha256 | sort > /tmp/tracked
+          awk '{print $2}' MANIFEST.sha256 | sort > /tmp/listed
+          diff /tmp/tracked /tmp/listed
+      - name: PDF signature and figure-script syntax
+        run: |
+          head -c 5 wales-20mph-attribution-manuscript-v1.0.0-candidate.pdf | grep -q '%PDF-'
+          python -m py_compile paper/figures/make_figure1.py
+      - name: Figure script refuses an unregistered input (negative control)
+        run: |
+          printf 'quarter\n2020Q1\n' > /tmp/bad.csv
+          if python paper/figures/make_figure1.py /tmp/bad.csv /tmp/out.pdf; then echo "accepted unregistered input"; exit 1; fi
+      - name: Metadata consistency
+        run: |
+          python - <<'PY'
+          import json
+          z=json.load(open('.zenodo.json')); c=json.load(open('CLAIMS.json'))
+          assert z['version']==c['version']=='1.0.0-candidate'
+          assert [x['name'] for x in z['creators']]==['Anonymous']
+          assert any(r['identifier']=='10.5281/zenodo.21894035' and r['relation']=='isSupplementTo' for r in z['related_identifiers'])
+          cff=open('CITATION.cff').read(); assert 'doi: 10.5281/zenodo.23326288' in cff and 'name: Anonymous' in cff
+          md=open('paper/MANUSCRIPT.md').read(); assert '1.1.0' not in md and '10.5281/zenodo.23326288' in md
+          print('metadata ok')
+          PY

@@ -1,0 +1,242 @@
+{
+  "case_id": "uk.transport.wales-20mph-casualty-attribution.v1",
+  "citations": {
+    "anchor_verified_count": 29,
+    "binding_count": 125,
+    "cited_source_count": 25,
+    "mode": "offline-frozen-snapshots",
+    "registered_locator_only_count": 0,
+    "source_count": 25,
+    "uncited_sources": []
+  },
+  "decision": {
+    "identification_determination": "NON_IDENTIFIED",
+    "terminal_status": "PUBLICATION_READY_NONIDENTIFICATION",
+    "trace": [
+      {
+        "outcome": "PASS",
+        "rationale": "Exact estimand semantics and stock/flow class are resolved.",
+        "record_refs": [
+          "record.wales-20mph.exact-estimand.v1"
+        ],
+        "rule_id": "semantic_gate"
+      },
+      {
+        "outcome": "PASS",
+        "rationale": "The assessed causal attribution remains unsupported; eligibility continues only for the rigorous counterexample-based non-identification result.",
+        "record_refs": [
+          "record.wales-20mph.candidate-claim.v1",
+          "record.wales-20mph.identification-status.v1"
+        ],
+        "rule_id": "claim_maturity_gate"
+      },
+      {
+        "outcome": "PASS",
+        "rationale": "Declared missingness does not block every defensible result.",
+        "record_refs": [
+          "record.wales-20mph.missingness.v1"
+        ],
+        "rule_id": "missingness_gate"
+      },
+      {
+        "outcome": "PASS",
+        "rationale": "Independent review declares no unresolved critical finding.",
+        "record_refs": [
+          "record.wales-20mph.adversarial-findings.v1"
+        ],
+        "rule_id": "adversarial_gate"
+      },
+      {
+        "outcome": "PASS",
+        "rationale": "Novelty audit records a residual contribution.",
+        "record_refs": [
+          "record.wales-20mph.candidate-claim.v1"
+        ],
+        "rule_id": "novelty_gate"
+      },
+      {
+        "outcome": "PASS",
+        "rationale": "A rigorous non-identification witness and release gates are present.",
+        "record_refs": [
+          "record.wales-20mph.identification-status.v1"
+        ],
+        "rule_id": "identification_gate"
+      }
+    ]
+  },
+  "freeze": {
+    "artifact": "frozen_sources/MANIFEST.sha256",
+    "entry_count": 26,
+    "sha256_entries": {
+      "frozen_sources/dft-collision-2021.csv": "2b74082fb328315173be9275418411c7bd61d6e12f5ddf206ce868d4b95b72cc",
+      "frozen_sources/dft-collision-2022.csv": "b09cdf3fc1b8163bb54eafc221148f31c3c8bbbeb62a977dcb87147b77716d3d",
+      "frozen_sources/dft-collision-2023.csv": "eb7809c6eb0c10d01603b918be2bf8effae39afa4421f475013131827e8dcba9",
+      "frozen_sources/dft-collision-2024.csv": "de63df852b245f44f73a9b4e35662466dc2ea0df269658b16e8c8721bbaac88a",
+      "frozen_sources/dft-collision-2025.csv": "633249567e95479a1c30b3f10b0a6271ced11684fb338d0b8b4054ca94b80aa6",
+      "frozen_sources/dft-road-casualty-data-guide-2025.xlsx": "5ee0d473e212ed50b2723ae52feeda86487861ed6a5a627b900f7b93c9bbf6b6",
+      "frozen_sources/dft-road-safety-open-data.html": "b9709ca9643a0f105cb3c801ee822bf6a2fc5d0bcbd62cfa47f9e94efa473ce6",
+      "frozen_sources/evidence-press-apep-prior-art-audit-2026-08-11.txt": "0560c8457d30afaae70e66e965909c3fe7fae010d7a9098a479309954da697d6",
+      "frozen_sources/osr-copyright.html": "e3c4379e52f2e28a35af6c51f51f2abc5d78970af131b5d927b75a41526dcc15",
+      "frozen_sources/osr-what-to-look-out-for-20mph.html": "9bb2735e3cf33959f156ff2b3b57217d0c74b6376fe0d92ff9f805aa6d2cd995",
+      "frozen_sources/statswales-2015q1-2026q1-20-30mph.csv": "d82da8dc7fc828fdbd749efdef51c15b875c22008dd65f90725b010819e461c8",
+      "frozen_sources/statswales-2022q4-2024q3-20-30mph.csv": "ed29e27059591387b1e4b801628dafbc0c23501eb9920cba632e9645b030d1f6",
+      "frozen_sources/statswales-dataset-metadata.csv": "a52684c6d2022f72c3f7f5938570eb80140599b03924d708978d8f96150cb4e9",
+      "frozen_sources/wg-30mph-exception-guidance.html": "1a95d6c0e477d72630fb21d5c089beff24eebe8aa1a950cfddbe961acfa1a024",
+      "frozen_sources/wg-copyright-statement.html": "1c66187d6cd0ef4aa9fd26bf5c67e15519272345224331a9787e8ea0206ee1db",
+      "frozen_sources/wg-figure-4-quarterly-casualties.svg": "06214fd53e16187d25eb75fc80639cb0ad91ebaa2cbcdea629419e7557d90483",
+      "frozen_sources/wg-q3-2024-provisional.html": "4e03c89a1123a6f02f274bb75be77cebbfde0a790aa332452fbe99598c84702e",
+      "frozen_sources/wg-road-casualties-2024-final.html": "6eb3e5ae8cec02f057fbeadfb4ce9cbdce8e051e674d41571d767d2353246bf2",
+      "frozen_sources/wg-road-casualties-2025-final.html": "52e769915c1b5f65f644fb41b183d9605a0888dd2ace8947ad503f3f01ce164e",
+      "frozen_sources/wg-road-collision-quality-report.html": "73af2a4be6bae399247a026d664a7d2c983a8f9f91c88479cab13090bfc441ec",
+      "frozen_sources/wg-road-collisions-2023.html": "9a44c32491dfcb801b0a9cdd171602700e341545a7ac242f47ecfac01ca76816",
+      "frozen_sources/wg-road-traffic-2024.html": "049494644e46006b3aaacdce2cc4e44e7793ad3fec7d7832d794633e1c0a4167",
+      "frozen_sources/wsi-2022-800.xml": "99708b510e57339e40dd10ff7c5ffe3b37c99ecf2bdf245f71cd42a2964b8f3b",
+      "searches/admission-discovery-snapshot.txt": "0be0440dbbb5d0dda34b166791020e0f37c5a61f5f03efa00788fd4e3ddc093d",
+      "searches/novelty-audit-2026-08-11.txt": "b5aef7b8edf71a463141a409147e2ed175ce20ce60ec83acef5ebd30c7510275",
+      "searches/source-audit-2026-08-11.txt": "7db3c4b90728f121930d673fe9842d280094de40de3908230d4a3faa77d777e9"
+    },
+    "write_state": "identical"
+  },
+  "package": {
+    "artifact_count": 8,
+    "output": "evidence-press",
+    "status": "PUBLICATION_READY_NONIDENTIFICATION",
+    "write_state": "created"
+  },
+  "receipt": {
+    "output": "validation-receipt.json",
+    "sha256": "b1a01a21fe53465a70f3e26428ecce06ab358d56b0a9d84cd7ee04646dd7e7db",
+    "write_state": "created"
+  },
+  "replay": {
+    "calculation_count": 17,
+    "calculations": [
+      {
+        "calculation_id": "calculation.wales-20mph.casualties-40plus-differential.v1",
+        "result": "33183625/7629734"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.casualties-all-roads-differential.v1",
+        "result": "-4770802700/563334291"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.casualties-england-40plus-percent-change.v1",
+        "result": "-37200/14077"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.casualties-england-all-roads-percent-change.v1",
+        "result": "-420900/123457"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.casualties-wales-40plus-percent-change.v1",
+        "result": "925/542"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.casualties-wales-all-roads-percent-change.v1",
+        "result": "-54200/4563"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.collisions-differential.v1",
+        "result": "-612376300/32817187"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.collisions-england-percent-change.v1",
+        "result": "-244600/68227"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.collisions-wales-percent-change.v1",
+        "result": "-10700/481"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.dft-current-percent-change.v1",
+        "result": "-11580/479"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.donor-differential.v1",
+        "result": "-23305720/1144331"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.england-donor-percent-change.v1",
+        "result": "-9100/2389"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.placebo-differential.v1",
+        "result": "219599575/23906184"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.placebo-england-percent-change.v1",
+        "result": "-38275/10536"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.placebo-wales-percent-change.v1",
+        "result": "12600/2269"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.provisional-percent-change.v1",
+        "result": "-33850/1201"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.statswales-current-percent-change.v1",
+        "result": "-31350/1201"
+      }
+    ],
+    "case_analysis_check_count": 1,
+    "case_analysis_checks": [
+      {
+        "analysis_id": "analysis.wales-20mph.descriptive-replay.v1",
+        "analysis_sha256": "f0588f5a784ca34b8efe7c4a5d380d8ffdf660b240dc0891f97194d7735856af",
+        "case_id": "uk.transport.wales-20mph-casualty-attribution.v1",
+        "checked_artifacts": [
+          {
+            "path": "derived/analysis.json",
+            "sha256": "f0588f5a784ca34b8efe7c4a5d380d8ffdf660b240dc0891f97194d7735856af"
+          },
+          {
+            "path": "derived/falsification_diagnostics.csv",
+            "sha256": "3e3187f9d4735bb8854354297544707cd2de2c4ad5030ffd8d489377bbc90c7d"
+          },
+          {
+            "path": "derived/measurement_audit.csv",
+            "sha256": "bff899af2aac036648e87390df8548f7697c40fdd751a49757246601b097758c"
+          },
+          {
+            "path": "derived/quarterly_event_series.csv",
+            "sha256": "192401637ebdeaff83c983472591fd968c12feb8cc184d6aea7161f9b12f077f"
+          },
+          {
+            "path": "derived/vintage_reconciliation.csv",
+            "sha256": "5316b836beee75cbfe1131c8550e7d03d00eb73442b8d93cdf6514ea8ebd8de8"
+          }
+        ],
+        "failures": [],
+        "ok": true,
+        "status": "PASS"
+      }
+    ],
+    "linear_span_test_count": 0,
+    "linear_span_tests": [],
+    "numeric_mode": "exact-rational",
+    "observation_calculation_binding_count": 3,
+    "observation_calculation_bindings": [
+      {
+        "calculation_id": "calculation.wales-20mph.casualties-40plus-differential.v1",
+        "observation_id": "observation.wales-20mph.outcome-diagnostic-40plus.v1",
+        "result": "33183625/7629734"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.casualties-all-roads-differential.v1",
+        "observation_id": "observation.wales-20mph.outcome-diagnostic-all-roads.v1",
+        "result": "-4770802700/563334291"
+      },
+      {
+        "calculation_id": "calculation.wales-20mph.collisions-differential.v1",
+        "observation_id": "observation.wales-20mph.outcome-diagnostic-collisions.v1",
+        "result": "-612376300/32817187"
+      }
+    ]
+  },
+  "validation": {
+    "cross_record": true,
+    "schema": true
+  }
+}

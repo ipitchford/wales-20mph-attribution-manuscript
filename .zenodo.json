@@ -1,0 +1,21 @@
+{
+  "title": "Wales 20 mph Casualty Attribution Audit: A Constructive Non-Identification Result — companion manuscript",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "version": "1.0.0-candidate",
+  "publication_date": "2026-10-12",
+  "creators": [{"name": "Anonymous"}],
+  "access_right": "open",
+  "license": "cc-zero",
+  "language": "eng",
+  "keywords": ["policy identification", "Wales", "20 mph", "road safety", "causal inference", "non-identification", "reproducible research"],
+  "description": "<p><strong>Unrefereed candidate.</strong> Companion manuscript to the Evidence Press evidence package of 11 August 2026 (DOI 10.5281/zenodo.21894035), which was released without a paper. The manuscript reports that package's frozen records, adds no new empirical analysis and does not change the package.</p><p>The Welsh Government's provisional statement that casualties on 20 and 30 mph roads were 28% lower in 2023 Q4 to 2024 Q3 than in the preceding four quarters is reproducible as a description of one data vintage (2,402 to 1,725 casualties; exactly -33850/1201 per cent). Later frozen vintages give about -26.10% (StatsWales) and -24.18% (DfT collision rows). For the registered causal estimand, the effect of the default 20 mph limit on police-recorded casualties on road segments whose limit actually changed, three hypothetical worlds reproduce the observed aggregates yet imply effects of -50%, 0% and +100%: within the frozen evidence and admitted rival set neither the effect nor its sign is identified, and no empirical bound is registered. The result does not show that the policy succeeded or failed.</p><p>Assurance: producer-side replay passes; reviews are internal AI-assisted review within the producer workflow. No independent rerun, independent reimplementation, formal verification, external specialist review or editorial peer review has been established.</p>",
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.21894035", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.21894035", "relation": "references", "scheme": "doi"},
+    {"identifier": "https://github.com/ipitchford/wales-20mph-attribution-manuscript/tree/v1.0.0-candidate", "relation": "isSupplementedBy", "scheme": "url"},
+    {"identifier": "https://evidencepress.org/releases/wales-20mph-attribution-manuscript/", "relation": "isDocumentedBy", "scheme": "url"},
+    {"identifier": "10.5281/zenodo.22259378", "relation": "references", "scheme": "doi"},
+    {"identifier": "10.1136/jech-2023-221612", "relation": "references", "scheme": "doi"}
+  ]
+}

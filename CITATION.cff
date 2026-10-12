@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: CC0-1.0
+cff-version: 1.2.0
+message: >-
+  Cite this unrefereed candidate as the companion manuscript to a corpus-specific constructive
+  non-identification result. It contains no causal effect estimate, independent reproduction or policy validation.
+title: "Wales 20 mph Casualty Attribution Audit: A Constructive Non-Identification Result — companion manuscript"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23326288
+date-released: "2026-10-12"
+license: CC0-1.0
+repository-code: https://github.com/ipitchford/wales-20mph-attribution-manuscript

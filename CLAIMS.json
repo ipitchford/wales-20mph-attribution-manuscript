@@ -1,0 +1,15 @@
+{
+  "release": "wales-20mph-attribution-manuscript",
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23326288",
+  "isSupplementTo": "10.5281/zenodo.21894035",
+  "status": "unrefereed-candidate",
+  "claims": [
+    {"id": "descriptive-replay", "statement": "The provisional Welsh Government first-year comparison reconstructs to 2,402 and 1,725 casualties, an exact change of -33850/1201 percent, compatible with the published 28% lower.", "kind": "descriptive", "record": "inference.wales-20mph.provisional-descriptive.v1"},
+    {"id": "vintage-dependence", "statement": "Later frozen official routes give -31350/1201 percent (StatsWales) and -11580/479 percent (DfT collision rows) for the same nominal comparison.", "kind": "descriptive", "record": "inference.wales-20mph.vintage-reconciliation.v1"},
+    {"id": "non-identification", "statement": "Three hypothetical worlds reproduce the observed aggregates (2402, 1725) yet imply affected-road effects of -50%, 0% and +100%; within the frozen corpus and admitted model class the effect and its sign are not identified.", "kind": "non-identification", "record": "inference.wales-20mph.nonidentification.v1"},
+    {"id": "no-bound", "statement": "No empirical identified interval or sign restriction is registered; the witness values are not bounds.", "kind": "non-identification", "record": "inference.wales-20mph.no-partial-bound.v1"}
+  ],
+  "claimCeiling": "The positive 28 percent attribution remains a challenged, unsupported policy claim. The case supplies a candidate, corpus-specific counterexample; it does not establish the policy's true effect, a new general theorem, exhaustive novelty, independent reproduction or peer review.",
+  "notClaimed": ["that the policy failed, succeeded or had no effect", "any effect magnitude or sign", "that -50%, 0% or +100% are estimates or bounds", "that every future design is non-identified"]
+}

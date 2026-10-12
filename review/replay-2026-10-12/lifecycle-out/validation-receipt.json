@@ -1,0 +1,94 @@
+{
+  "case_id": "uk.transport.wales-20mph-casualty-attribution.v1",
+  "claim_id": "claim.uk.transport.wales-20mph-casualty-attribution.v1",
+  "generated_at": "2026-08-11T20:59:50+01:00",
+  "identification_determination": "NON_IDENTIFIED",
+  "identity_projection_sha256": "1d4ad67be534b1605d826b2889891496cd7ce164a1a3b048d9801b6767546cb5",
+  "input_manifest_sha256": "d058eed268056bbb07d5ee2b6747dfe93c074092bfa0fd4b4d722f77c3858bfb",
+  "package_artifacts": [
+    {
+      "byte_size": 602,
+      "path": "MANIFEST.sha256",
+      "sha256": "af83b43c6de14f40ffbf868ff6e1c3909168890d6d7382cfab2b9d1a6f10b4f5"
+    },
+    {
+      "byte_size": 12283,
+      "path": "PRESS_RELEASE.md",
+      "sha256": "8746e73cad80fddd3b58419c1a63c80643effe723d5bed523dc9592d49a28459"
+    },
+    {
+      "byte_size": 1455,
+      "path": "README.md",
+      "sha256": "8cc930054c05d921ca21dc49e112a86066a9e871d949f6741a509f0630a09f64"
+    },
+    {
+      "byte_size": 25774205,
+      "path": "REPOSITORY_HISTORY.bundle",
+      "sha256": "0e6de385960831953cfd37e2e14172515b1a5ad513b4ea30cf611b0337573790"
+    },
+    {
+      "byte_size": 42850,
+      "path": "REPOSITORY_SNAPSHOT.json",
+      "sha256": "8b614d8e44802f181ab456304259e073bcd38af99bbcee508fbb5d824875147c"
+    },
+    {
+      "byte_size": 100608000,
+      "path": "REPOSITORY_SNAPSHOT.tar",
+      "sha256": "673c0092b744a7e09f02dee7a8598cea8582b868ef425f95b56d395283cf7a8e"
+    },
+    {
+      "byte_size": 8955,
+      "path": "SCIENTIFIC_INPUTS.sha256",
+      "sha256": "d058eed268056bbb07d5ee2b6747dfe93c074092bfa0fd4b4d722f77c3858bfb"
+    },
+    {
+      "byte_size": 292990,
+      "path": "package.json",
+      "sha256": "937610279dce7e0443051fad5b1382aceaf84158bd40b3579595c0fdf53ccb1e"
+    }
+  ],
+  "package_format": "evidence-press-review-package/1.4",
+  "receipt_format": "evidence-press-validation-receipt/1.1",
+  "release_source_commit": "7ea482fa82fd2330db6383c249aba0d43ac4bea4",
+  "replay": {
+    "argv": [
+      "uv",
+      "run",
+      "--no-editable",
+      "--offline",
+      "--frozen",
+      "--no-sync",
+      "pio",
+      "lifecycle",
+      "cases/wales-20mph-casualty-attribution",
+      "--schema-root",
+      "schemas",
+      "--output",
+      "OUTPUT_DIRECTORY"
+    ],
+    "expected_outputs": [
+      "MANIFEST.sha256",
+      "lifecycle-summary.json",
+      "validation-receipt.json",
+      "evidence-press"
+    ],
+    "network_policy": "OFFLINE_REQUIRED",
+    "working_directory": "REPOSITORY_ROOT"
+  },
+  "replay_command": "uv run --no-editable --offline --frozen --no-sync pio lifecycle cases/wales-20mph-casualty-attribution --schema-root schemas --output OUTPUT_DIRECTORY",
+  "replayed_commit": "044de77e14959cfb987d67505c43a63d64b82a4c",
+  "reviewed_scientific_commit": "e068cd1779fd762ed4c8bda94676c18145d31898",
+  "source_receipt": {
+    "artifact": {
+      "byte_size": 5438,
+      "path": "records/final_receipt.json",
+      "sha256": "ab27a535b5c7298632f9e35d0197da4044f378274ea677fc58f597c6734721b2"
+    },
+    "receipt_id": "receipt.uk.transport.wales-20mph-casualty-attribution.v2"
+  },
+  "source_receipt_generated_at": "2026-08-11T20:43:41+01:00",
+  "terminal_status": "PUBLICATION_READY_NONIDENTIFICATION",
+  "trust_boundary": "This is the attested round-eight release-source receipt for the corpus-specific PUBLICATION_READY_NONIDENTIFICATION result. The 45-entry scientific target is unchanged. Round eight deterministically certifies only the detached-verifier correction; it is not independent review. The replacement clean-checkout replay passed 283 ordinary tests, 283 optimized collection-smoke tests, the standalone optimized scientific controls and all case gates. The positive 28 percent causal attribution remains unsupported. Final package construction, DOI archival, Evidence Press deployment and public readback remain pending. This receipt supplies no causal effect estimate, independent empirical reproduction, human peer review or policy validation.",
+  "truth_certified": false,
+  "validation_receipt_id": "validation:1d4ad67be534b1605d826b2889891496cd7ce164a1a3b048d9801b6767546cb5"
+}

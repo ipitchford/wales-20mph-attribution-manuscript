@@ -1,0 +1,3 @@
+uv 0.10.4 (Homebrew 2026-02-17)
+Python 3.11.14
+Darwin Admins-Mac-mini.local 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:02:16 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8112 arm64
